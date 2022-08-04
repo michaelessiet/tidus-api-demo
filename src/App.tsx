@@ -62,13 +62,13 @@ const App: Component = () => {
         <input
           type="text"
           placeholder="Contract address"
-          onkeyup={(e) => setSearch(e.currentTarget.value)}
+          onchange={e=>setSearch(e.currentTarget.value)}
           required
         />
         <input
           type="text"
           placeholder="Blockchain"
-          onkeyup={(e) => setBlockchain(e.currentTarget.value)}
+          onchange={(e) => setBlockchain(e.currentTarget.value)}
           required
         />
         <span style={{ display: "flex", "align-items": "center" }}>
